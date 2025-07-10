@@ -1,0 +1,14 @@
+<svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Ramka wokół ".EXE" -->
+  <rect x="80" y="30" width="140" height="40" fill="none" stroke="#e0e0e0" stroke-width="2"></rect>
+
+  <!-- Napis ".EXE" wyśrodkowany w ramce -->
+  <text x="150" y="58" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="24" fill="#e0e0e0" letter-spacing="3">
+    .EXE
+  </text>
+
+  <!-- "studio" wyrównane do prawego dolnego rogu ramki -->
+  <text x="222" y="70" font-family="Segoe UI, sans-serif" font-size="10" fill="#888888">
+    studio
+  </text>
+</svg>

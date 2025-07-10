@@ -1,13 +1,64 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>.EXE Studio</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: #e0e0e0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+    }
 
+    .image-container,
+    .text {
+      margin: 1rem 0;
+    }
+
+    .image-container img {
+      max-width: 90vw;
+      max-height: 50vh;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .text {
+      font-size: 1.2rem;
+      color: #aaa;
+    }
+  </style>
 </head>
-
 <body>
-  <h1>DotEXE Studio</h1>
-  <p>Website under construction...</p>
-</body>
 
+  <div class="logo">
+    <!-- SVG LOGO -->
+    <svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="80" y="30" width="140" height="40" fill="none" stroke="#e0e0e0" stroke-width="2" />
+      <text x="150" y="58" text-anchor="middle" font-family="Segoe UI, sans-serif"
+            font-size="24" fill="#e0e0e0" letter-spacing="3">
+        .EXE
+      </text>
+      <text x="222" y="70" font-family="Segoe UI, sans-serif" font-size="10"
+            fill="#888888">
+        studio
+      </text>
+    </svg>
+  </div>
+
+  <div class="image-container">
+    <img src="gamepad_image.png" alt="Disassembled gamepad on a futuristic workbench">
+  </div>
+
+  <div class="text">something might happen here one day...</div>
+
+</body>
 </html>
