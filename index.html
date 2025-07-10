@@ -1,54 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>.EXE Studio</title>
+  <title>dotEXE Studio</title>
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
     body {
       margin: 0;
       padding: 0;
-      background-color: #121212;
-      color: #e0e0e0;
+      height: 100%;
+      overflow: hidden;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 100vh;
-      text-align: center;
+      color: #e0e0e0;
+      gap: 1rem;
+
+      background-color: #121212;
+      background-image:
+        linear-gradient(transparent 96%, rgba(255, 255, 255, 0.02) 97%, transparent 100%),
+        linear-gradient(90deg, transparent 96%, rgba(255, 255, 255, 0.02) 97%, transparent 100%);
+      background-size: 40px 40px;
+      background-repeat: repeat;
     }
 
-    .image-container,
-    .text {
-      margin: 1rem 0;
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* 🧭 Wyśrodkowane domyślnie (desktop i mobile) */
+      height: 100vh;
+      text-align: center;
+      padding: 1.5rem 1rem;
+    }
+
+    .logo svg {
+      height: 60px;
+      width: auto;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+
+    .image-container {
+      max-height: 40vh;
+      margin-bottom: 1rem;
     }
 
     .image-container img {
+      max-height: 100%;
       max-width: 90vw;
-      max-height: 50vh;
       border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     }
 
     .text {
-      font-size: 1.2rem;
+      font-size: 1.1rem;
       color: #aaa;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      body {
+        justify-content: center;
+        /* ✅ Przywrócone wyśrodkowanie */
+        padding-top: 0rem;
+      }
+
+      .logo svg {
+        height: 50px;
+      }
+
+      .image-container {
+        max-height: 30vh;
+      }
+
+      .text {
+        font-size: 1rem;
+      }
     }
   </style>
 </head>
+
 <body>
 
   <div class="logo">
-    <!-- SVG LOGO -->
-    <svg width="300" height="100" viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
-      <rect x="80" y="30" width="140" height="40" fill="none" stroke="#e0e0e0" stroke-width="2" />
-      <text x="150" y="58" text-anchor="middle" font-family="Segoe UI, sans-serif"
-            font-size="24" fill="#e0e0e0" letter-spacing="3">
-        .EXE
+    <svg viewBox="0 0 300 100" xmlns="http://www.w3.org/2000/svg">
+      <rect x="80" y="30" width="140" height="40" fill="none" stroke="#aaa" stroke-width="2" />
+      <text x="150" y="58" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="24" fill="#aaa"
+        letter-spacing="3">
+        . EXE
       </text>
-      <text x="222" y="70" font-family="Segoe UI, sans-serif" font-size="10"
-            fill="#888888">
+      <text x="227" y="70" font-family="Segoe UI, sans-serif" font-size="15" fill="#aaa">
         studio
       </text>
     </svg>
@@ -61,4 +108,5 @@
   <div class="text">something might happen here one day...</div>
 
 </body>
+
 </html>
